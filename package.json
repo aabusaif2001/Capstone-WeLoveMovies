@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "zid-be-project-movie-01-qualified",
   "main": "src/app.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "docker:build": "docker image build . -t thinkful-ed/zid-be-project-movie-01-qualified",
     "docker:run": "docker run --rm -it -p 5000:5000 thinkful-ed/zid-be-project-movie-01-qualified",
@@ -29,7 +32,7 @@
     "knex": "^0.21.12",
     "morgan": "^1.10.0",
     "pg": "^8.4.2",
-    "sqlite3": "^5.0.0"
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "jest": "^26.6.3",
